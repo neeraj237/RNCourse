@@ -11,11 +11,12 @@ function GoalInput(props) {
          setEnteredGoalText('');
       }
     
-    return (
+    return (      
     <View style={styles.inputContainer}>
     <TextInput style={styles.textInput} placeholder='Your cource goal!!' onChangeText={goalInputHandler} value={enteredGoalText} />    
     <Button title = "Add goal" onPress={addGoalHandler} />
   </View>
+  
 )};
 
 export default GoalInput;
